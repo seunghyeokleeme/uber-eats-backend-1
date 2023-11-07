@@ -13,7 +13,6 @@ export class RestaurantResolver {
   createRestaurant(
     @Args() createRestaurantInput: CreateRestaurantDto,
   ): boolean {
-    console.log(createRestaurantInput);
     return true;
   }
 }
