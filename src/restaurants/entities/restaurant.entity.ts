@@ -4,8 +4,12 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @ObjectType()
 @Entity()
 export class Restaurant {
+  @Field(type => Number)
   @PrimaryGeneratedColumn()
+  id: number;
+
   @Field(type => String)
+  @Column()
   name: string;
 
   @Field(type => Boolean)
